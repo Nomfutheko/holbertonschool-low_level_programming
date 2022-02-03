@@ -1,23 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Defines main can only be called without any parameters
  *
- * Return: Always 0 (Success)
+ *Description: printf displays the size of the variable
+ *sizeof evaluates the size of a variable
+ *
+ *Return: 0 at the end of the function
  */
 
 int main(void)
 {
-	char acharacter;
-	int ainteger;
-	long along;
-	long long alonglong;
-	float afloat;
 
-	printf("Size of a char: %lu byte(s)\n", sizeof(acharacter));
-	printf("Size of an int: %lu byte(s)\n", sizeof(ainteger));
-	printf("Size of a long int: %lu byte(s)\n", sizeof(along));
-	printf("Size of a long long int: %lu byte(s)\n", sizeof(alonglong));
-	printf("size of a float: %lu byte(s)\n", sizeof(afloat));
-	return (0);
+char charType;
+int intType;
+long int longintType;
+long long int longlongintType;
+float floatType;
+
+/*sizeof evaluates the size of a variable */
+
+printf("Size of a char: %zu byte(s)\n", sizeof(charType));
+printf("Size of an int: %zu byte(s)\n", sizeof(intType));
+printf("Size of a long int: %zu byte(s)\n", sizeof(longintType));
+printf("Size of a long long int: %zu byte(s)\n", sizeof(longlongintType));
+printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
+
+return (0);
+
 }
