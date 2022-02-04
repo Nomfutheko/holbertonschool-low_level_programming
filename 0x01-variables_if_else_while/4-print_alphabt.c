@@ -11,9 +11,10 @@ int main(void)
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
 		if (letter != 'e' && letter != 'q')
-			putchgar(letter);
+		putchgar(letter);
 	}
 	putchar('\n');
 
 	return(0);
 }
+
