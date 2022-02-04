@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -7,11 +6,12 @@
  */
 int main(void)
 {
+
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-		patchar(c);
-		patchar('\n');
+		putchar(c);
+		putchar('\n');
 
-		return (0);
+return (0);
 }
