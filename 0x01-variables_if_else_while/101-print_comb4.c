@@ -20,7 +20,7 @@ int main(void)
 					putchar(i);
 					putchar(k);
 
-					if (c !=m'7')
+					if (c != '7')
 					{
 						putchar(',');
 						putchar(' ');
