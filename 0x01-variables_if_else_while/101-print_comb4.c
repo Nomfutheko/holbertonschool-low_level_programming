@@ -1,10 +1,10 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
- * main - prints 3 combination of numbers
- *
- * Return: Always (Success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
 	int c, i, k;
@@ -34,5 +34,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-
 }
