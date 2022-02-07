@@ -1,22 +1,20 @@
 #include <stdio.h>
 
 /**
-* main - Print all single digit numbers
-*
-* Return: Always 0 (Success)
-*/
+  * main - Prints the numbers since 0 to 9
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int digit;
+	char n;
 
-	for (digit = 0; digit < 10; digit++)
-<<<<<<< HEAD
-		printf("%i", digit);
-		putchar("\n");
-=======
-	printf("%i", digit);
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
+
 	putchar('\n');
->>>>>>> 1499b3386c9dea5ebf3639e9488e1bc342e92149
 
 	return (0);
 }
