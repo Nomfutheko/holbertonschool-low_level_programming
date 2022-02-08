@@ -4,7 +4,7 @@
  *
  * Return: no return
  */
-void times_table(void)
+void time_table(void)
 {
 	int a, b, c;
 
@@ -14,17 +14,17 @@ void times_table(void)
 		for (b = 1; b <=9; b++)
 		{
 			c = a * b;
-			putchar(44);
-			putchar(32);
+			_putchar(44);
+			_putchar(32);
 			if (c <= 9)
 			{
-				putchar(32);
-				putchar(c + 48);
+			_putchar(32);
+			_putchar(c + 48);
 			}
 			else
 			{
-				putchar((c / 10) + 48 );
-				putchar((c % 10)+ 48 );
+			_putchar((c / 10) + 48 );
+			_putchar((c % 10)+ 48 );
 			}
 		}
 		putchar('\n');
