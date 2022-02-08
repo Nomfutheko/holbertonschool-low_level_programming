@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
-* main - Print the word "Holberton"
-*
-* Return: Always 0 (Success)
-*/
-
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
 int main(void)
 {
-	int i;
-	char p[] = "_putchar";
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
 
-	for (i = 0; i < 9; i++)
-		{
-		putchar(p[i]);
-		}
-		putchar('\n');
+	putchar('\n');
+
 	return (0);
 }
