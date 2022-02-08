@@ -4,7 +4,7 @@
  *
  * Return: no return
  */
-void time_table(void)
+void times_table(void)
 {
 	int a, b, c;
 
@@ -27,6 +27,6 @@ void time_table(void)
 			_putchar((c % 10)+ 48 );
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
