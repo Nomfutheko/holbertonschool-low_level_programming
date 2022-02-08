@@ -9,15 +9,12 @@
 int main(void)
 {
 	int i;
-	char p[] ="_putchar";
+	char p[] = "Holberton";
 
-for (i = 0; i < 8; i++)
-{
-putchar(p[i]);
-}
-
-
-putchar('\n');
-return (0);
-
+	for (i = 0; i < 9; i++)
+		{
+		_putchar(p[i]);
+		}
+		_putchar('\n');
+	return (0);
 }
