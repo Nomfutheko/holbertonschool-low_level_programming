@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
 * main - Print the word "Holberton"
@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	char p[] = "Holberton";
+	char p[] = _putchar";
 
 	for (i = 0; i < 9; i++)
 		{
