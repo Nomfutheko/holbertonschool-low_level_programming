@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
  /**
   * jack_baur - prints every minute of the day
   *
@@ -12,21 +12,20 @@ void jack_bauer(void)
 	{
 		for (b = 48; b <= 57; b++)
 		{
-			for (c = 48; c <= 57; c++)
+			for (c = 48; c <= 53; c++)
 			{
 				for (d = 48; d <= 57; d++)
 				{
 					if (a >= 50 && b >= 52)
-						break;
-					putchar(a);
-					putchar(b);
-					putchar(58);
-					putchar(c);
-					putchar(d);
-					putchar('\n');
+					break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(58);
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
 				}
 			}
 		}
 	}
 }
-			
