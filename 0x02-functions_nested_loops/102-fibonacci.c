@@ -12,20 +12,19 @@ int main (void)
 
 	while (i < 50)
 	{
-		if (i = 0)
+		if (i == 0)
 			printf("%ld", j);
 		else if (i == 1)
 			printf(", %ld", k);
 		else
 		{
 			k += j;
-			j = k - l;
+			j = k - 1;
 			printf(", %ld", k);
 		}
 
-		++i
+		++i;
 	}
-
 	printf("\n");
 	return (0);
 }
