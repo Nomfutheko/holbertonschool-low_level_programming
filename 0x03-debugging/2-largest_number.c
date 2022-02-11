@@ -1,18 +1,21 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-  * print_numbers - Print the numbers since 0 up to 9
-  *
-  * Return: The numbers since 0 up to 9
-  */
+ *print_numbers - Prints numbers from 0 to 9
+ *Return: Always 0
+ */
+
 void print_numbers(void)
 {
-	int x;
+	int n = 0;
 
-	for (x = 0; x <= 9; x++)
+	while (n <= 9)
 	{
-		_putchar(x + '0');
+		_putchar(n + '0');
+
+		n++;
 	}
 
 	_putchar('\n');
+
 }
