@@ -4,7 +4,7 @@
  *@s: value taken from main
  * Return: ALways 0.
  */
-int print_rev(char *s)
+void print_rev(char *s)
 {
 	int len;
 
