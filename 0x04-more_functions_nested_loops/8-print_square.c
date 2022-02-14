@@ -1,8 +1,8 @@
-#include " main.h"
+#include "main.h"
 /**
- * print_square - function to print a square
- * @size: takes in the size ofthe square
- */
+* print_square - function to print a square
+* @size: takes in the size of the square
+*/
 void print_square(int size)
 {
 	int i, j;
