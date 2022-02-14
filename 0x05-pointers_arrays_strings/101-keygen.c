@@ -38,7 +38,7 @@ int main (void)
 			 
 		}
 	}
-	printf("%", password);
+	printf("%s", password);
 
 	return (0);
 }
