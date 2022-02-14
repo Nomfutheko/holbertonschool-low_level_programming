@@ -1,20 +1,21 @@
-#include <stdio.h>
-#include "main.h"
+#include<stdio.h>
+#include "holberton.h"
 /**
- * print_array - update value.
- * @a: value to be evaluated.
- * @n: value to be evaluated.
- * Return: nothing.
+ *print_array - update value.
+ *@a: value to be evaluate.
+ *@n: value to be evaluate.
+ *Return: not.
  */
 void print_array(int *a, int n)
 {
 	int x;
-	for (x = 0; x < n; x++)
+
+	for (x = 0 ; x < n; x++)
 	{
 		printf("%d", a[x]);
-		if ( x != n - 1)
+		if (x != n - 1)
 		{
-			printf(" , ");
+			printf(", ");
 		}
 	}
 	printf("\n");
