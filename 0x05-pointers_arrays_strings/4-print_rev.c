@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *print_rev - take the string from function
- *@s: value taken from main
- * Return: ALways 0.
+ * print_rev - toma la cadena de la funcion.
+ * @s: value taken from main
+ * Return: (0)
  */
 void print_rev(char *s)
 {
@@ -11,7 +11,7 @@ void print_rev(char *s)
 	for (len = 0; s[len] != '\0'; len++)
 	{
 	}
-	for (len = len - 1; len >= 0; len++)
+	for (len = len - 1; len >= 0; len--)
 	{
 		_putchar(s[len]);
 	}
