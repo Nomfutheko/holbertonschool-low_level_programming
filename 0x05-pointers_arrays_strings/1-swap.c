@@ -3,8 +3,8 @@
 
 /**
  *swap_int -  swaps the values of two integers.
- @a: value to be evaluated.
- @b: value to be evaluated.
+ @a: An integer to swap
+ @b: Another integer to swap
 Return: nothing
 */
 
