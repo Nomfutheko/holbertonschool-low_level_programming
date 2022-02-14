@@ -1,9 +1,9 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
  *rev_string - update value.
- @s: value to be evaluated
- * return: Always 0
+ *@s: value to be evaluate.
+ *Return: not.
  */
 void rev_string(char *s)
 {
@@ -20,7 +20,7 @@ void rev_string(char *s)
 		len++;
 	}
 	l = len - 1;
-	for (; e< ((1 / 2) + 1) ; e++)
+	for ( ; e < ((l / 2) + 1) ; e++)
 	{
 		x = (l - e);
 		n = s[e];
