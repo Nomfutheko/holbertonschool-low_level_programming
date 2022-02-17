@@ -1,16 +1,16 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * *_strcmp - compares two strings
- * @s1: the sirst string
- * @s2 the second string
- *
- * Return: int value
- */
+  * _strcmp - Compares two strings
+  * @s1: The first string
+  * @s2: The second string
+  *
+  * Return: int value
+  */
 int _strcmp(char *s1, char *s2)
 {
 	int a = 0, b = 0, c = 0, r = 0, lim;
-	
+
 	while (s1[a])
 	{
 		a++;
@@ -20,7 +20,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		b++;
 	}
-	
+
 	if (a <= b)
 	{
 		lim = a;
@@ -39,10 +39,12 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 		{
-			r s1[c] - s2[c];
+			r = s1[c] - s2[c];
 			break;
 		}
+
 		c++;
 	}
+
 	return (r);
 }
