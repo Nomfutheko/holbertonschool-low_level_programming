@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * _strpbrk - search a string for any of a set of bytes
- * @s: source string
- * @accept: accepted characters
- *
- * Return: the string since the first found accepted character
- */
-char *_strpbrk(char *s, char *accept)
+  * _strspn - search a string for a set of bytes
+  * @s: source string
+  * @accept: accepted string
+  *
+  * Return: number of bytes in the init segment
+  */
+unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0, b;
-	
-	while (s[a])
+	unsigned int a = 0, b, t = 0;
+
+	while (accept[a])
 	{
 		b = 0;
 
-		while (accept[b])
+		while (s[b] != 32)
 		{
-			if (s[a] == accept[b])
+			if (accept[a] == s[b])
 			{
-				s += a;
-				return (s);
+				t++;
 			}
 
 			b++;
@@ -29,5 +28,5 @@ char *_strpbrk(char *s, char *accept)
 		a++;
 	}
 
-	return ('\0');
+	return (t);
 }
