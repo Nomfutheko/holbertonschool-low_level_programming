@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strchr - locate character in sring
- * @s: source string
- * @c: character to find
- *
- * Return: the string from character found
- */
-char *_strch(char *s, char c)
+  * _strchr - locate character in string
+  * @s: source string
+  * @c: character to find
+  *
+  * Return: the string from character found
+  */
+char *_strchr(char *s, char c)
 {
 	int a = 0, b;
 
@@ -15,13 +15,15 @@ char *_strch(char *s, char c)
 	{
 		a++;
 	}
-	for (b = 0; b <=a; b++)
+
+	for (b = 0; b <= a; b++)
 	{
 		if (c == s[b])
 		{
 			s += b;
-	return(s);
+			return (s);
 		}
 	}
+
 	return ('\0');
 }
