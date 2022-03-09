@@ -3,12 +3,12 @@
 #include <udis86.h>
 
 /**
- * main - ..
- * @argc: ...
- * @argv: ...
- *
- * return: ...
- */
+  * main - ...
+  * @argc: ...
+  * @argv: ...
+  *
+  * Return: ...
+  */
 int main(int argc, char *argv[])
 {
 	ud_t ud_obj;
@@ -20,18 +20,18 @@ int main(int argc, char *argv[])
 
 		if (val < 0)
 		{
-			printf("error\n");
+			printf("Error\n");
 			exit(2);
 		}
 
 		ud_unit(&ud_obj);
-		ud_set_input _buffer(&ud_obj, argv[1], val);
+		ud_set_input_buffer(&ud_obj, argv[1], val);
 		ud_set_mode(&ud_obj, 64);
 		ud_set_syntax(&ud_obj, UD_SYN_INTEL);
 
 		while (ud_disassemble(&ud_obj))
 		{
-			printf("\t&s\n", ud insn_hex(&ud_obj));
+			printf("\t%s\n", ud_insn_hex(&ud_obj));
 		}
 	}
 
