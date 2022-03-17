@@ -1,10 +1,10 @@
-# include "lists.h"
+#include "lists.h"
 
 /**
  * list_len - returns the number of node in a list
- * @n: given list
+ * @h: a given lsit head
  *
- * Return : legnth of the list
+ * Return: a length of the list
  */
 size_t list_len(const list_t *h)
 {
@@ -12,8 +12,8 @@ size_t list_len(const list_t *h)
 
 	while (h != 0)
 	{
-		legnth++;
+		length++;
 		h = h->next;
 	}
-	return (legnth);
+	return (length);
 }
