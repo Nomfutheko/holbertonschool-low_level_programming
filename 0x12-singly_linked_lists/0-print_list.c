@@ -2,15 +2,16 @@
 #include <stdio.h>
 
 /**
- * print_lists - print all elements of lists
- * @n: pointer pointed to the head of the list
+ * print_list - print all the elements of list
+ * @h: pointer pointed to the head of the list
  *
- * returm: the number of the elements
+ * Return: the number of the elements
  */
 
 size_t print_list(const list_t *h)
 {
 	size_t length = 0;
+
 	while (h != 0)
 	{
 		if (h->str == NULL)
