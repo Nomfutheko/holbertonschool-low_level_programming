@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * _strlen - finds the legnth of a string
+ * _strlen - finds the length of a string
  * @str: string to be searched
  *
- * return: length  of string
+ * Return: length of the string
  */
 unsigned int _strlen(char *str)
 {
@@ -36,10 +36,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	newnode->str = strdup(str);
-	if (newnode-.str == NULL)
+	if (newnode->str == NULL)
 	{
 		free(newnode);
-		return (null);
+		return (NULL);
 	}
 	newnode->len = _strlen(newnode->str);
 	newnode->next = *head;
