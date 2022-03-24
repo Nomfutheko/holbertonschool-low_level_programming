@@ -7,21 +7,20 @@
  * Return:  the converted number.
  */
 
-unsigned int binary_to uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int unsint = 0;
 
-	if (b == NULL)
-		return (0);
-	while (*b)
-	{
-		if (*b != '0' && *b != '1')
+		if (b == NULL)
 			return (0);
-		unsint = unsint << 1;
-		if (*b == '1')
-			unsint = unsint ^ 1;
-
-		b++;
-	}
+		while (*b)
+		{
+			if (*b != '0' && *b != '1')
+				return (0);
+			unsint = unsint << 1;
+			if (*b == '1')
+				unsint = unsint ^ 1;
+			b++;
+		}
 	return (unsint);
 }
